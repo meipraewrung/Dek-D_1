@@ -37,37 +37,37 @@
 </head>
 
 <body>
-    <form action="" method="POST">
-    <div class="container">
-        <div class="form-group">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="headName"><b>ตั้งกระทู้ใหม่</b></h1>
+    <form action="submits.php" method="POST">
+        <div class="container">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="headName"><b>ตั้งกระทู้ใหม่</b></h1>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-1 boxTitle">
+                        <i class="fa fa-pencil titleIcon"></i>
+                    </div>
+                    <div class="col-11">
+                        <input id="tName" type="text" class="form-control" name="title" placeholder="หัวข้อกระทู้" required pattern=".{4,140}" title="4-140 characters">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="dName">เนื้อหากระทู้</label><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <textarea rows="8" cols="30" wrap="virtual" id="deConName" class="form-control" name="content" aria-describedby="helpId" placeholder="เนื้อหากระทู้" required pattern=".{6,2000}" title="6-2000 characters"></textarea>
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-warning" type="submit" value="Submit">สร้างกระทู้</button>
             </div>
-            <div class="row">
-                <div class="col-1 boxTitle">
-                    <i class="fa fa-pencil titleIcon"></i>
-                </div>
-                <div class="col-11">
-                    <input id="tName" type="text" class="form-control" name="title" aria-describedby="helpId" placeholder="หัวข้อกระทู้">
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-12">
-                    <label for="dName">เนื้อหากระทู้</label><br>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <textarea rows="8" cols="30" wrap="virtual" id="deConName" class="form-control" name="content" aria-describedby="helpId" placeholder=""></textarea>
-                </div>
-            </div>
-            <br>
-            <button class="btn btn-warning" type="submit" value="Submit">สร้างกระทู้</button>
         </div>
-    </div>
     </form>
 </body>
 
