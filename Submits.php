@@ -21,9 +21,17 @@ if (isHTML($title1)) {
                     color: #FF0000; 
                     padding-top: 3em;">
             <b>หัวข้อชื่อกระทู้ไม่อนุญาตใส่ HTML</b></p>';
-    echo '<br><br><br>';
-    echo '';
+    echo '<br>';
+    echo '<a href="Home.php"><center>back</center></a>';
     return;
+} else {
+    echo '<center>';
+    echo '<h1 style="padding-top: 1em;"> ชื่อกระทู้ : ';
+    echo $title1 ;
+    echo '</h1>';
+    echo '<p>เนื้อหากระทู้ : ';
+    echo $content1;
+    echo '</p></center>';
 }
 
 ?>
