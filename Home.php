@@ -61,7 +61,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <textarea rows="8" cols="30" wrap="virtual" id="deConName" class="form-control" name="content" aria-describedby="helpId" placeholder="เนื้อหากระทู้" required pattern=".{6,2000}" title="6-2000 characters"></textarea>
+                        <textarea rows="8" cols="30" wrap="virtual" id="deConName" class="form-control" name="content" minlength="6" maxlength="2000" placeholder="เนื้อหากระทู้" required></textarea>
                     </div>
                 </div>
                 <br>
