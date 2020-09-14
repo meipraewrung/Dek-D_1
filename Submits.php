@@ -30,8 +30,9 @@ if (isHTML($title1)) {
     echo $title1 ;
     echo '</h1>';
     echo '<p>เนื้อหากระทู้ : ';
+    echo '<br><textarea rows="25" cols="120" >'; 
     echo $content1;
-    echo '</p></center>';
+    echo '</textarea></p></center>';
 }
 
 ?>
